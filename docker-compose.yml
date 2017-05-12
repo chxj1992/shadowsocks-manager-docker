@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  shadowsocks-manager:
+    build: .
+    container_name: shadowsocks-manager
+    ports:
+      - "8388:8388"
+      - "4001:4001"
+      - "4002:4002"
+    volumes: 
+      - $PWD/supervisor:/etc/supervisor
+      - $PWD/config:/etc/shadowsocks
+      - $PWD/data:~/.ssmgr
+    restart: always
+
