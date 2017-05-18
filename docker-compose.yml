@@ -8,9 +8,11 @@ services:
       - "8388:8388"
       - "4001:4001"
       - "4002:4002"
+      - "9001:9001"
     volumes: 
       - $PWD/supervisor:/etc/supervisor
       - $PWD/config:/etc/shadowsocks
-      - $PWD/data:~/.ssmgr
+      - $PWD/data:/root/.ssmgr
+      - $PWD/code:/var/www/shadowsocks-manager
     restart: always
 
