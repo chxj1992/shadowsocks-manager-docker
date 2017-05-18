@@ -1,0 +1,1 @@
+webpackJsonp([3],[function(o,n,c){var t=c(1),f=c(5),e=c(6);t("from b"),f(),e()},,,,,function(o,n){o.exports=function(){console.log("I am b1.")}},function(o,n){o.exports=function(){console.log("I am b2.")}}]);

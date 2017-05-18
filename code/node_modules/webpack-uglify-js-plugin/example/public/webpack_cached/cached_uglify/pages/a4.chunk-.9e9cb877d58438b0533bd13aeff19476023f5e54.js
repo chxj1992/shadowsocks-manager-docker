@@ -1,0 +1,1 @@
+webpackJsonp([2],{4:function(o,n){o.exports=function(){console.log("I am a4.")}}});

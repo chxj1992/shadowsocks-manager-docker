@@ -1,0 +1,10 @@
+type: s
+empty: false
+shadowsocks:
+  # ss-manager port
+  address: 127.0.0.1:6001
+manager:
+  # ssmgr server port
+  address: 0.0.0.0:4001
+  password: '123456'
+db: 'ss.sqlite'

@@ -1,0 +1,140 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "shadowsocks-manager",
+        "scope": null,
+        "escapedName": "shadowsocks-manager",
+        "name": "shadowsocks-manager",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/root"
+    ]
+  ],
+  "_from": "shadowsocks-manager@latest",
+  "_id": "shadowsocks-manager@0.6.15",
+  "_inCache": true,
+  "_location": "/shadowsocks-manager",
+  "_nodeVersion": "6.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/shadowsocks-manager-0.6.15.tgz_1494519659233_0.11850507045164704"
+  },
+  "_npmUser": {
+    "name": "gyteng",
+    "email": "igyteng@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "shadowsocks-manager",
+    "scope": null,
+    "escapedName": "shadowsocks-manager",
+    "name": "shadowsocks-manager",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/shadowsocks-manager/-/shadowsocks-manager-0.6.15.tgz",
+  "_shasum": "444e50c023ff2e7ca7757c75fa5a550e8be9143d",
+  "_shrinkwrap": null,
+  "_spec": "shadowsocks-manager",
+  "_where": "/root",
+  "author": {
+    "name": "Gu Yuteng",
+    "email": "igyteng@gmail.com"
+  },
+  "bin": {
+    "ssmgr": "./bin/ssmgr"
+  },
+  "bugs": {
+    "url": "https://github.com/shadowsocks/shadowsocks-manager/issues"
+  },
+  "dependencies": {
+    "alipay-ftof": "0.0.2",
+    "babel": "^6.23.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "body-parser": "^1.15.2",
+    "commander": "^2.9.0",
+    "compression": "^1.6.2",
+    "connect-session-knex": "^1.3.0",
+    "del": "^2.2.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "express-validator": "^3.1.1",
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "inquirer": "^1.1.3",
+    "js-yaml": "^3.6.1",
+    "knex": "^0.12.2",
+    "later": "^1.2.0",
+    "lodash": "^4.16.4",
+    "log4js": "^1.0.0",
+    "moment": "^2.15.1",
+    "mysql": "^2.13.0",
+    "nodemailer": "^2.6.4",
+    "raven": "^1.1.4",
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1",
+    "sqlite3": "^3.1.4",
+    "web-push": "^3.2.2",
+    "webpack": "^1.14.0",
+    "webpack-stream": "^3.2.0",
+    "webpack-uglify-js-plugin": "^1.1.9",
+    "ws": "^2.0.2"
+  },
+  "description": "A shadowsocks manager tool for multi user and traffic control.",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "webpack-uglify-js-plugin": "^1.1.9"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "444e50c023ff2e7ca7757c75fa5a550e8be9143d",
+    "tarball": "https://registry.npmjs.org/shadowsocks-manager/-/shadowsocks-manager-0.6.15.tgz"
+  },
+  "gitHead": "d36085ef60da08ff8545947cfdb4c20e13d09bdd",
+  "homepage": "https://github.com/shadowsocks/shadowsocks-manager#readme",
+  "keywords": [
+    "shadowsocks",
+    "manager",
+    "gfw"
+  ],
+  "license": "GPL",
+  "main": "server.js",
+  "maintainers": [
+    {
+      "name": "gyteng",
+      "email": "igyteng@gmail.com"
+    }
+  ],
+  "name": "shadowsocks-manager",
+  "optionalDependencies": {},
+  "readme": "[![NPM version][npm-image]][npm-url]\n[![npm license][license-image]][download-url]\n\n[npm-image]: https://img.shields.io/npm/v/shadowsocks-manager.svg?style=flat-square\n[npm-url]: https://npmjs.org/package/shadowsocks-manager\n[download-url]: https://npmjs.org/package/shadowsocks-manager\n[license-image]: https://img.shields.io/npm/l/shadowsocks-manager.svg\n\n# shadowsocks-manager\n\nA shadowsocks manager tool for multi user and traffic control.  \nBase on Node.js and SQLite.\n\nFor more details, you can see [the wiki page](https://github.com/shadowsocks/shadowsocks-manager/wiki).\n\nIf you want to use the old version, please switch to [this branch](https://github.com/shadowsocks/shadowsocks-manager/tree/version1).\n\n## WebGUI Demo:\n\n[https://wall.gyteng.com](https://wall.gyteng.com)\n\n## Dependencies\n\nNode.js 6.*\n\n## Install\n\n### From source:\n\n```\ngit clone https://github.com/shadowsocks/shadowsocks-manager.git\ncd shadowsocks-manager\nnpm i\n```\nuse `node server.js` to run this program.  \n\n### From npm:\n```\nnpm i -g shadowsocks-manager\n```\nuse `ssmgr` to run this program.\n\n### From docker:\n```\ndocker run --name ssmgr -idt -v ~/.ssmgr:/root/.ssmgr --net=host gyteng/ssmgr [ssmgr params...]\n```\n\n### Build docker image:\n\nhere is the `Dockerfile`\n\n```\nFROM ubuntu:16.04\nMAINTAINER gyteng <igyteng@gmail.com>\nRUN apt-get update && \\\n    apt-get install curl git sudo -y && \\\n    curl -sL https://deb.nodesource.com/setup_6.x | bash - && \\\n    apt-get install -y nodejs && \\\n    npm i -g shadowsocks-manager && \\\n    git clone https://github.com/shadowsocks/shadowsocks-libev.git ~/shadowsocks && \\\n    mkdir -p ~/build-area/ && \\\n    cp ~/shadowsocks/scripts/build_deb.sh ~/build-area/ && \\\n    cd ~/build-area && \\\n    ./build_deb.sh\nENTRYPOINT [\"/usr/bin/ssmgr\"]\n```\n\n### Usage\n1. Start shadowsocks with [manager API](https://github.com/shadowsocks/shadowsocks/wiki/Manage-Multiple-Users), it supports `shadowsocks-python` and `shadowsocks-libev`.\nFor example, you can run this command:  \n`ss-manager -m aes-256-cfb -u --manager-address 127.0.0.1:6001`\n2. run ssmgr with type s:\n\n  config file:  \n  ```\n  type: s\n  empty: false\n  shadowsocks:\n    address: 127.0.0.1:6001\n  manager:\n    address: 0.0.0.0:4001\n    password: '123456'\n  db: 'ss.sqlite'\n  ```\n\n  If you want to use MySQL, the `db` must like this:\n\n  ```\n  db:\n    host: '1.1.1.1'\n    user: 'root'\n    password: 'abcdefg'\n    database: 'ssmgr'\n  ```\n\n  And you have to close `only_full_group_by` when the version of MySQL is greater than 5.7\n\n  command:  \n  `ssmgr -c /your/config/file/path.yml`\n\n3. If you have several servers, you have to run step 1 and step 2 in every server.  \nThe listening address in `--manager-address` of step 1 and in `shadowsocks -> address` of step 2's config file must be same. For security reseon, we recommend you to use `127.0.0.1` instead of `0.0.0.0`.\n4. Now you can use the plugins to manage them. You can read the details in plugins readme page.\n\n```\n+-------------+    +-------------+       +------+\n| Shadowsocks |    | Shadowsocks |  ...  |      |\n| manager API |    | manager API |       |      |\n+-------------+    +-------------+       +------+\n       |                 |                  |\n       |                 |                  |\n+-------------+    +-------------+       +------+\n| ssmgr       |    | ssmgr       |  ...  |      |\n| with type s |    | with type s |       |      |\n+-------------+    +-------------+       +------+\n       |                 |                  |\n       +------------+----+--------  ...  ---+\n                    |\n                    |\n             +---------------+\n             | ssmgr plugins |\n             |  with type m  |\n             +---------------+\n```\n\n### Plugins\n`[================100%]` [cli](https://github.com/shadowsocks/shadowsocks-manager/blob/master/plugins/cli/README.md)  \n`[================100%]` [telegram](https://github.com/shadowsocks/shadowsocks-manager/blob/master/plugins/telegram/README.md)  \n`[================100%]` [flowSaver](https://github.com/shadowsocks/shadowsocks-manager/blob/master/plugins/flowSaver/README.md)  \n`[================100%]` [email]()  \n`[================100%]` [user]()  \n`[================100%]` [freeAccount](https://github.com/shadowsocks/shadowsocks-manager/blob/master/plugins/freeAccount/README.md)  \n`[================100%]` [account]()  \n`[===============90%--]` [webgui](https://github.com/shadowsocks/shadowsocks-manager/blob/master/plugins/webgui/README.md)  \n`[================100%]` [alipay]()  \n\n### Parameter\n\n`ssmgr --help` will show startup parameters info.\n\n```\nUsage: ssmgr [options]\n\n  Options:\n\n    -h, --help                   output usage information\n    -V, --version                output the version number\n    -c, --config [file]          config file, default: ~/.ssmgr/default.yml\n    -d, --db [file]              sqlite3 file, sample: ~/.ssmgr/db.sqlite\n    -e, --empty                  clean database\n    -t, --type [type]            type, s for server side, m for manager side\n    -s, --shadowsocks [address]  ss-manager address, sample: 127.0.0.1:6001\n    -m, --manager [address]      manager address, sample: 0.0.0.0:6002\n    -p, --password [password]    manager password, both server side and manager side must be equals\n    -r, --run [type]             run shadowsocks from child_process, sample: libev / libev:aes-256-cfb / python / python:aes-256-cfb\n    --debug                      show debug message\n```\n\nFirst, ssmgr will read the config file in `--config`, and other parameters(`-detsmp`) will replace the config file values.\n\n### Telegram\nJoin the group if you have some problem: [https://t.me/ssmgr](https://t.me/ssmgr)\n\n### Donate\nIf you find this project helpful, please consider making a donation:  \n\n* Alipay  \n<img src=\"https://github.com/gyteng/gyteng.github.com/raw/master/media/pic/alipay.jpg\" width=\"160\">\n\n* WeChat Pay  \n<img src=\"https://github.com/gyteng/gyteng.github.com/raw/master/media/pic/wechat.png\" width=\"160\">\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowsocks/shadowsocks-manager.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "prepublish": "gulp",
+    "start": "node server.js"
+  },
+  "version": "0.6.15"
+}
