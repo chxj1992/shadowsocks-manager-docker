@@ -14,5 +14,6 @@ RUN apt-get update && \
 ADD code /var/www/shadowsocks-manager
 ADD config /etc/shadowsocks
 ADD supervisor /etc/supervisor
+ADD entry.sh .
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+ENTRYPOINT ["bash", "./entry.sh"]
