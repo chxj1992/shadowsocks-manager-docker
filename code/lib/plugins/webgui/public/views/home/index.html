@@ -1,19 +1,63 @@
-<div layout="column" layout-align="center center">
-    <div layout="column" layout-align="center center" style="background-color: #E0E0E0; width: 100%;">
-        <img src="/libs/banner4.jpeg" style="width:100%;"></img>
-    </div>
-    <div layout="row" layout-align="space-around center" style="background-color: #E0E0E0; width: 100%;">
-        <md-button hide-gt-xs ng-click="login()">
-            登录
-        </md-button>
-        <md-button hide-gt-xs ng-click="signup()">
-            注册
-        </md-button>
-    </div>
-    <div hide-xs hide-sm hide-md style="height: 55px;"></div>
+<div>
+  <div id="banner" layout="column" layout-align="center" style="background-color: #E0E0E0; width: 100%;">
+    <img src="/libs/banner4.jpeg" style="width:100%;"></img>
+  </div>
 
-    <div layout="row" layout-xs="column" style="width: 100%;">
-    </div>
+	<div class="container inner">
 
-      <p id="declare">based on the great work of <a target="_blank" href="https://github.com/shadowsocks/shadowsocks-manager">@shadowsocks-manager</a></p>
+
+		<div class="row">
+		  <div class="col-sm-6" style="margin-top:80px;">
+				<h1>Free!</h1>
+				<p>
+					本网站提供的翻墙服务是完全免费的，只需要通过邮箱注册帐号，就可以获得每天500M的免费流量，满足学生狗和科研狗查资料的基本需求。
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<figure><img src="/libs/data.png"></figure>
+			</div>
+		</div>			
+
+		<div class="row" style="margin-top:20px;">
+			<div class="col-sm-6 pull-right" style="margin-top:80px;">
+				<h1>Easy!</h1>
+				<p>
+					本站的翻墙服务采用	
+					<a target="_blank" href="https://shadowsocks.org/en/download/clients.html">Shadowsocks</a>
+					搭建，你可以通过其
+					<a target="_blank" href="https://shadowsocks.org/en/download/clients.html">官方网站</a>
+					方便地获取到你需要的客户端软件，将本网站提供的帐号信息填入客户端中即可实现翻墙。
+					同时，Shadowsocks客户端还可以配合知名Chrome插件
+					<a target="_blank" href="https://github.com/FelisCatus/SwitchyOmega/releases">SwitchyOmega</a>
+					使用，让翻墙进行的更加优雅。
+				</p>
+			</div>
+			<div class="col-sm-6 pull-right">
+				<figure><img src="/libs/shadowsocks.png"></figure>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top:20px;">
+		  <div class="col-sm-8" style="margin-top:80px;">
+				<h1>Enjoy?</h1>
+				<p>
+					如果你喜欢这个网站，可以打开支付宝扫描右图二维码(或长按图片识别图中二维码)向我打赏一元，以示鼓励!
+					当然，更要感谢Shadowsocks作者
+					<a target="_blank" href="https://github.com/clowwindy">@clowwindy</a>
+					无私的开源精神以及为争取人类自由意志所做作出的杰出贡献。
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<figure><img src="/libs/reward.jpg"></figure>
+			</div>
+		</div>			
+
+	</div>	
+
+  <div layout="column" layout-align="center" style="width: 100%; margin-top:30px;">
+    <p style="margin-left:30px; font-size:14px;">
+			based on the great work of <a target="_blank" href="https://github.com/shadowsocks/shadowsocks-manager">@shadowsocks-manager</a>
+		</p>
+  </div>
 </div>
+
