@@ -52,4 +52,4 @@ services:
 
 ### Screenshot
 
-![screenshot](https://github.com/chxj1992/shadowsocks-manager-docker/raw/master/screenshot.png)
+[![screenshot](https://github.com/chxj1992/shadowsocks-manager-docker/raw/master/screenshot.png)](http://fuck-the-wall.chxj.name)
