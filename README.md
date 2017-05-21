@@ -52,4 +52,4 @@ services:
 
 ### Screenshot
 
-![screenshot](https://github.com/chxj1992/shadowsocks-manager-docker/edit/master/screenshot.png)
+![screenshot](https://github.com/chxj1992/shadowsocks-manager-docker/blob/master/screenshot.png)
