@@ -1,5 +1,7 @@
 This is a docker image of [shadowsocks-manager webui plugin](https://github.com/shadowsocks/shadowsocks-manager)
 
+[Check it on the DockerHub](https://hub.docker.com/r/chxj1992/shadowsocks-manager-docker/)
+
 ### Supported tags
 
 * 0.1.0
