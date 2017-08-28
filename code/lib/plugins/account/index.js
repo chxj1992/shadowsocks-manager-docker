@@ -82,10 +82,14 @@ const getAccount = (() => {
 
 const delAccount = (() => {
   var _ref4 = _asyncToGenerator(function* (id) {
-    const result = yield knex('account_plugin').delete().where({ id });
-    if (!result) {
+    const account = yield knex('account_plugin').select().where({ id }).then(function (success) {
+      if (success.length) {
+        return success[0];
+      }
       return Promise.reject('Account id[' + id + '] not found');
-    }
+    });
+    const result = yield knex('account_plugin').delete().where({ id });
+    yield knex('user').delete().where({ id: account.userId });
     yield checkAccount.checkServer();
     return result;
   });

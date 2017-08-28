@@ -122,7 +122,8 @@ const checkServer = (() => {
         }
         if (data.create + data.limit * timePeriod <= Date.now() || data.create >= Date.now()) {
           if (a.autoRemove) {
-            knex('account_plugin').delete().where({ id: a.id }).then();
+            knex('account_plugin').delete().where({ id: a.id });
+            knex('user').delete().where({ id: a.userId });
           }
         }
       }

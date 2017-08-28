@@ -71,6 +71,21 @@ const addUser = (() => {
   };
 })();
 
+const delUser = (() => {
+  var _ref4 = _asyncToGenerator(function* (id) {
+    const result = yield knex('user').delete().where({ id });
+    if (!result) {
+      return Promise.reject('User id[' + id + '] not found');
+    }
+    return result;
+  });
+
+  return function delAccount(_x5) {
+    return _ref4.apply(this, arguments);
+  };
+})();
+
+
 const checkPassword = (() => {
   var _ref3 = _asyncToGenerator(function* (username, password) {
     try {
@@ -228,6 +243,7 @@ const getUserAndPaging = (() => {
 })();
 
 exports.add = addUser;
+exports.del = delUser;
 exports.edit = editUser;
 exports.checkPassword = checkPassword;
 exports.get = getUsers;
