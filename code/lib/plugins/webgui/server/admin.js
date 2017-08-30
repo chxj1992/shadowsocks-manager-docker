@@ -6,6 +6,7 @@ const user = appRequire('plugins/user/index');
 const knex = appRequire('init/knex').knex;
 const moment = require('moment');
 const alipay = appRequire('plugins/alipay/index');
+const checkAccount = appRequire('plugins/account/checkAccount');
 
 exports.getServers = (req, res) => {
   serverManager.list().then(success => {
@@ -118,6 +119,15 @@ exports.editServer = (req, res) => {
 exports.deleteServer = (req, res) => {
   const serverId = req.params.serverId;
   serverManager.del(serverId).then(success => {
+    res.send('success');
+  }).catch(err => {
+    console.log(err);
+    res.status(403).end();
+  });
+};
+
+exports.checkServer = (req, res) => {
+  checkAccount.checkServer().then(success => {
     res.send('success');
   }).catch(err => {
     console.log(err);

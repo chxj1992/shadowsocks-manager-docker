@@ -44,6 +44,7 @@ app.get('/api/admin/server/:serverId(\\d+)', isAdmin, admin.getOneServer);
 app.post('/api/admin/server', isAdmin, admin.addServer);
 app.put('/api/admin/server/:serverId(\\d+)', isAdmin, admin.editServer);
 app.delete('/api/admin/server/:serverId(\\d+)', isAdmin, admin.deleteServer);
+app.post('/api/admin/server/check', isAdmin, admin.checkServer);
 
 app.get('/api/admin/account', isAdmin, admin.getAccount);
 app.get('/api/admin/account/port/:port(\\d+)', isAdmin, admin.getAccountByPort);
