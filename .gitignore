@@ -2,3 +2,4 @@ data/*
 !data/.gitkeep
 config/*
 !config/*.example
+code/lib/plugins/webgui/googlea920cafb3adf73e3.html
