@@ -1,3 +1,11 @@
+
+
+[![screenshot](https://github.com/chxj1992/shadowsocks-manager-docker/raw/master/screenshot.png)](http://fuck-the-wall.chxj.name)
+
+
+[在线示例](http://fuck-the-wall.chxj.name)
+
+
 这是一个基于 [shadowsocks-manager webui 插件](https://github.com/shadowsocks/shadowsocks-manager) 开发的shadowsocks账号售卖网站的Docker镜像
 
 此镜像发布在 [DockerHub](https://hub.docker.com/r/chxj1992/shadowsocks-manager-docker/) 上，国内访问 `DockerHub` 速度缓慢，建议使用 `DaoCloud` 或 `阿里云` 提供的加速器来下载镜像
@@ -15,8 +23,6 @@
 `docker run --rm -it --name shadowsocks-manager -p 4002:4002 chxj1992/shadowsocks-manager-docker:0.1.0`
 
 在浏览器中访问 `http://localhost:4002` 
-
-[在线示例](http://fuck-the-wall.chxj.name)
 
 
 ### 默认端口
@@ -60,6 +66,3 @@ services:
   
 ```
 
-### Screenshot
-
-[![screenshot](https://github.com/chxj1992/shadowsocks-manager-docker/raw/master/screenshot.png)](http://fuck-the-wall.chxj.name)
