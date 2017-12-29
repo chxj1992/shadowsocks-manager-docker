@@ -5,6 +5,7 @@
 
 [在线示例](http://fuck-the-wall.chxj.name)
 
+---
 
 这是一个基于 [shadowsocks-manager webui 插件](https://github.com/shadowsocks/shadowsocks-manager) 开发的shadowsocks账号售卖网站的Docker镜像
 
