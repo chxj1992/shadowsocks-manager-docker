@@ -90,7 +90,7 @@
     "webpack": "^1.14.0",
     "webpack-stream": "^3.2.0",
     "webpack-uglify-js-plugin": "^1.1.9",
-    "ws": "^2.0.2"
+    "ws": "^7.2.1"
   },
   "description": "A shadowsocks manager tool for multi user and traffic control.",
   "devDependencies": {
